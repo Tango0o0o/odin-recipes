@@ -2,24 +2,76 @@
     font-family: sans-serif, Arial;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 210, 181);
+}
+
+body {
+    margin: 0;
+} /* reset */
+
 h1 {
     font-size: 42px;
 }
 
-body,
-a {
-    color: rgb(0, 210, 181);
+.main-heading {
+    display: block;
+    text-align: center;
 }
 
-.recipe-list li a {
-    font-size: 24px;
-}
-
+h1,
 h2,
 h3{
     text-decoration: underline;
 }
 
-p {
-    color: black;
+
+/* Specific colors for the links */
+
+.jollof-link {
+    background-color: hsl(28, 87%, 55%);
+}
+
+.jollof-link:hover {
+    background-color: hsl(28, 87%, 35%);
+}
+
+.chips-link {
+    background-color: hsl(44, 85%, 73%);
+}
+
+.chips-link:hover {
+    background-color: hsl(44, 85%, 53%);
+}
+
+.paella-link {
+    background-color: hsl(43, 63%, 71%);
+}
+
+.paella-link:hover {
+    background-color: hsl(43, 63%, 51%);
+}
+
+
+.chips-link, .jollof-link, .paella-link {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+} /* got this from chatgpt ngl sorry! */
+
+.recipe-list li a {
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.recipe-list {
+    list-style-type: none;
+    margin: 0;
+    padding:0
 }
